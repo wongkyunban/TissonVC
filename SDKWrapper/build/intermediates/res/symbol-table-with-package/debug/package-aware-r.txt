@@ -1,0 +1,2 @@
+com.huawei.opensdk.sdkwrapper
+string app_name

@@ -1,0 +1,3 @@
+include ':app'
+include ':Huawei_EC_Service:CallService', ':Huawei_EC_Service:LoginService', ':Huawei_EC_Service:CommonService', ':Huawei_EC_Service:ConferenceService', ':Huawei_EC_Service:ServiceMgr', 'Huawei_EC_Service:ContactService'
+include ':SDKWrapper'

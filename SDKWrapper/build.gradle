@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+//            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.google.code.gson:gson:2.8.5'
+    api files('libs/HME-Audio.jar')
+    api files('libs/HME-Video.jar')
+    api files('libs/KMC.jar')
+    api files('libs/TsdkService.jar')
+    api files('libs/TsdkServiceBase.jar')
+    api files('libs/TupCall.jar')
+    api files('libs/TupCmptService.jar')
+    api files('libs/TupConf.jar')
+    api files('libs/TupConfCtrl.jar')
+    api files('libs/TupEaddr.jar')
+//    api files('libs/TupIm.jar')
+    api files('libs/TupRsa.jar')
+    api files('libs/TupService.jar')
+    api files('libs/TupSocket.jar')
+    api files('libs/ecslib.jar')
+    api files('libs/TupComponent.jar')
+    api files('libs/TupCorpDirectory.jar')
+    api files('libs/TupContacts.jar')
+}

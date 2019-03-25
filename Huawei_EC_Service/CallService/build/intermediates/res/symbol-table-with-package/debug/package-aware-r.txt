@@ -1,0 +1,25 @@
+com.huawei.opensdk.callsdk
+string accept
+string account_information_not_empty
+string add_attendee_fail
+string add_attendee_success
+string app_name
+string bereject
+string create_conf_fail
+string create_conf_success
+string delete_attendee
+string delete_attendee_success
+string end_call
+string errorcall
+string inaccessible
+string logining_msg
+string oppositebusying
+string proxyServer_not_null
+string refuse
+string regServer_not_null
+string tup_call
+string tup_callfailed
+string tup_cancelled
+string tup_conference
+string voipstatusnocnt
+string voipstatusnoreply

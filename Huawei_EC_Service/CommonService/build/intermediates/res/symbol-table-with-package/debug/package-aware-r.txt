@@ -1,0 +1,2 @@
+com.huawei.opensdk.commonservice
+string app_name
